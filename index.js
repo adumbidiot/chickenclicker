@@ -11,4 +11,8 @@ app.get('/', function(req, res){
 	res.send('HELLO WORLD!');
 });
 
+app.get('/favicon.ico', function(req, res){
+	res.sendFile(__dirname + '/favicon.ico');
+});
+
 app.listen(port);
