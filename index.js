@@ -15,4 +15,8 @@ app.get('/favicon.ico', function(req, res){
 	res.sendFile(__dirname + '/favicon.ico');
 });
 
+app.use(function(req, res){
+	res.status('404').send('404');
+});
+
 app.listen(port);
